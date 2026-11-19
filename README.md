@@ -1,8 +1,7 @@
-# Validating revdeprun under Apptainer/Singularity without root
+# Verify revdeprun under Apptainer/Singularity without root
 
 A scratch kit for checking that revdeprun can run as an unprivileged user
-inside an Apptainer/Singularity container, as on a SLURM cluster. It is not
-part of the revdeprun package.
+inside an Apptainer/Singularity container, as on a SLURM cluster.
 
 Stock revdeprun can't do this: even with `--skip-r-install`, the
 system-requirements step runs `sudo sh -c ...`, and `sudo` can't gain root
